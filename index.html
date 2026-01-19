@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game Sandbox</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div>
+          <h1>Snake Game Sandbox</h1>
+          <p>Eat the food, grow the snake, and avoid collisions.</p>
+        </div>
+        <div class="scoreboard">
+          <div>
+            <span class="label">Score</span>
+            <span id="score">0</span>
+          </div>
+          <div>
+            <span class="label">Best</span>
+            <span id="best-score">0</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="game-area">
+        <canvas id="game" width="480" height="480" aria-label="Snake game"></canvas>
+        <aside class="panel">
+          <h2>Controls</h2>
+          <ul>
+            <li>Arrow keys / WASD — move</li>
+            <li>Space — pause / resume</li>
+            <li>R — restart</li>
+          </ul>
+          <h2>Status</h2>
+          <p id="status">Press an arrow key to start.</p>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Tip: Start slow and plan your turns. The snake speeds up as you score more points.
+        </p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
